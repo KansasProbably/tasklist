@@ -1,8 +1,8 @@
 package com.example.tasklist.domain.exception;
 
-public class ResourceNotFound extends RuntimeException {
+public class ResourceNotFoundException extends RuntimeException {
 
-    public ResourceNotFound(String message) {
+    public ResourceNotFoundException(String message) {
         super(message);
     }
 
