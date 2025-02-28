@@ -23,12 +23,12 @@ public class UserDto {
     @Length(max = 255, message = "Username max length is 255 symbols", groups = {OnCreate.class, OnUpdate.class})
     private String username;
 
-    @NotNull(message = "Password must be not null", groups = {OnCreate.class, OnUpdate.class})
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @NotNull(message = "Password must be not null", groups = {OnCreate.class, OnUpdate.class})
     private String password;
 
-    @NotNull(message = "Password confirmation must be not null", groups = {OnCreate.class, OnUpdate.class})
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @NotNull(message = "Password confirmation must be not null", groups = {OnCreate.class})
     private String passwordConfirmation;
 
 

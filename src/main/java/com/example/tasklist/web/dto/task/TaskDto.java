@@ -23,7 +23,7 @@ public class TaskDto {
     @Length(max = 255, message = "Title max length is 255 symbols", groups = {OnCreate.class, OnUpdate.class})
     private String title;
 
-    @Length(max = 255, message = "Name max length is 255 symbols", groups = {OnCreate.class, OnUpdate.class})
+    @Length(max = 255, message = "Description max length is 255 symbols", groups = {OnCreate.class, OnUpdate.class})
     private String description;
 
 

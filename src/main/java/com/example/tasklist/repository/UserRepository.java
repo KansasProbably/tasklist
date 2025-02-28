@@ -9,7 +9,7 @@ public interface UserRepository {
 
     Optional<User> findById(Long id);
 
-    Optional<User> findByIdUsername(String username);
+    Optional<User> findByUsername(String username);
 
     void update(User user);
 

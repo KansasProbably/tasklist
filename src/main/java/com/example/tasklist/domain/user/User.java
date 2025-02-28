@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 @Data
-@Accessors(chain = true)
+
 
 public class User {
 
